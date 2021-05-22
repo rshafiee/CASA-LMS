@@ -1,0 +1,27 @@
+.form-control {
+  border: none !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(30, 221, 136, 0.4) !important;
+  height: 60px !important;
+}
+.form-control:hover {
+  border: 1px solid rgba(30, 221, 136, 1) !important;
+}
+
+.login {
+  width: 450px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 16px;
+  padding: 28px;
+  border: 1px solid #F3F0F9;
+  border-radius: 8px;
+}
+
+.signup {
+  width: 450px;
+  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 16px;
+  padding: 28px;
+  border: 1px solid #F3F0F9;
+  border-radius: 8px;
+}

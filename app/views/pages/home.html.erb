@@ -1,4 +1,20 @@
-<div class="container">
-  <h1>Welcome to CASA Learning Management System</h1>
-  <p>Please click below to sign-in or sign-up</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://www.study-in-germany.de/medien/studyin.de/deutsch-lernen/fittosize__620_0_b2b43919634e20514afacbf52ca5a48f_deutsche_sprache_1_638x334px.jpg);">
+  <div class="container justify-content-center">
+    <div class="text-center">
+      <h1>Welcome to
+        <div class="d-inline-flex">
+          <h1 style="font-family: 'Reggae One', cursive; color: #D01117;">C</h1>
+          <h1 style="font-family: 'Reggae One', cursive; color: #F3F0F9;">A</h1>
+          <h1 style="font-family: 'Reggae One', cursive; color: #E3B505;">S</h1>
+          <h1 style="font-family: 'Reggae One', cursive; color: #1EDD88;">A</h1>
+        </div>
+   Language School</h1>
+      <p>Change your life and learn a new language at one of the best language schools in Germany!</p>
+      <%= link_to "Sign in", new_user_session_path, class: "btn btn-ghost" %>
+      <%= link_to "Sign up", new_user_registration_path, class: "btn btn-ghost" %>
+    </div>
+  </div>
 </div>
+
+
+<%= render "shared/footer" %>
