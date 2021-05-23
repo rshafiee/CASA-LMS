@@ -1,29 +1,28 @@
 .form-control {
   border: none !important;
-  border-radius: 8px !important;
-  border: 1px solid rgba(30, 221, 136, 0.4) !important;
-  height: 60px !important;
+  border-radius: 4px !important;
+  border: 1px solid #ddd !important;
+  height: 50px !important;
 }
 .form-control:hover {
   border: 1px solid rgba(30, 221, 136, 1) !important;
 }
+.form-group {
+  font-weight: lighter !important;
+  color: gray !important;
+}
 
 .login {
   width: 450px;
-  height: 450px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 16px;
+  height: 550px;
   padding: 28px;
-  border: 1px solid #F3F0F9;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .signup {
   width: 450px;
-  height: 450px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 16px;
-  padding: 28px;
-  border: 1px solid #F3F0F9;
-  border-radius: 8px;
+  height: 600px;
+  border-radius: 10px !important;
 }
 
 .confirmation {
@@ -34,3 +33,4 @@
   border: 1px solid #F3F0F9;
   border-radius: 8px;
 }
+
