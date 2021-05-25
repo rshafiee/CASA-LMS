@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :registerable, :confirmable
 
+  has_one_attached :avatar
+
 # To skip required confirmation all-together
 # protected
 # def confirmation_required?

@@ -24,8 +24,16 @@
                     required: true,
                     input_html: { autocomplete: "current-password" } %>
       </div>
+      <div class="field mt-3">
+        <div class="">
+          <%= f.input :avatar,
+            label: 'Upload your avatar',
+            direct_upload: true
+            %>
+        </div>
+      </div>
 
-      <div class="form-actions">
+      <div class="form-actions mt-3">
         <%= f.button :submit, "Update", class: "btn btn-flat" %>
       </div>
     <% end %>
