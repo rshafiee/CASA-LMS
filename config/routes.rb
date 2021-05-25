@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/profile'
+  get 'users/show', as: 'profile'
   devise_for :users, controllers: { confirmations: 'confirmations' }
   root to: 'pages#home'
   resources 'dashboards', only: [:index]
