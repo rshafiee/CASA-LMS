@@ -1,11 +1,26 @@
 <div class="container">
-  <h1>Profile</h1>
-  <div class="profile-pic mt-4">
-    <%= image_tag(current_user.avatar_thumbnail, class: "avatar-large", id: "avatar") %>
-  </div>
-  <div class="profile-text mt-4">
-    <h5>Hi, I am Rahman!</h5>
-    <h4>About me</h4>
-    <p>I am passionate about languages. I travel a lot and want to be able to speak the local languages.</p>
+  <div class="row d-flex">
+    <div class="col-12 col-md-3">
+      <div class="profile-pic mt-4">
+        <%= image_tag(current_user.avatar_thumbnail, class: "avatar-large", id: "avatar") %>
+      </div>
+      <div class="profile-text mt-2">
+        <p class="ml-5">Hey <%= current_user.first_name %>!</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-9 mt-5">
+      <h6>About yourself</h6>
+      <div class="box-profile">
+        <ul>
+          <li>👋 Hi, I’m Rahman (@rshafiee)</li>
+          <li>👀 I’m interested in programming and solving problems.</li>
+          <li>🌱 I’m currently doing a web development course at Le Wagon Berlin and am learning a lot of fun and new things about web applications, front and back-end development and programming in general.</li>
+          <li>💞️ I’m looking to collaborate on different projects, especially projects related to TechforEd.</li>
+          <li>📫 You can reach me at r.shafiee@gmx.de.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
+
+
