@@ -23,15 +23,13 @@
 }
 
 .nav-link {
-  transition: 0.5s;
-  font-size: 15px;
+  font-size: 16px;
   opacity: 0.9;
 }
 
 .nav-link:hover {
   color: $yellow !important;
-  transition: 0.3s;
-  font-size: 16px;
+  font-size: 16.2px;
 }
 
 .dropdown-item {
@@ -41,6 +39,5 @@
 .dropdown-item:hover {
   color: $yellow !important;
   overflow: hidden;
-  transition: 0.2s;
-  font-size: 15px !important;
+  font-size: 14.5px !important;
 }

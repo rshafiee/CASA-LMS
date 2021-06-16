@@ -18,22 +18,22 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
-          <%= link_to "Home", root_path, class: "nav-link" %>
+          <%= link_to "Home", root_path, class: "nav-link nav-items" %>
         </li>
         <li class="nav-item active">
-          <%= link_to "Dashboard", dashboards_path, class: "nav-link" %>
+          <%= link_to "Dashboard", dashboards_path, class: "nav-link nav-items" %>
         </li>
         <li class="nav-item active">
-          <%= link_to "Challenges", dashboards_path, class: "nav-link" %>
+          <%= link_to "Challenges", dashboards_path, class: "nav-link nav-items" %>
         </li>
         <li class="nav-item active">
-          <%= link_to "Resources", dashboards_path, class: "nav-link" %>
+          <%= link_to "Resources", dashboards_path, class: "nav-link nav-items" %>
         </li>
         <li class="nav-item active">
-          <%= link_to "Classmates", dashboards_path, class: "nav-link" %>
+          <%= link_to "Classmates", dashboards_path, class: "nav-link nav-items" %>
         </li>
         <li class="nav-item active mr-3">
-          <%= link_to "Messages", dashboards_path, class: "nav-link" %>
+          <%= link_to "Messages", dashboards_path, class: "nav-link nav-items" %>
         </li>
         <li class="nav-item dropdown">
           <%= image_tag(current_user.avatar_thumbnail, class: "avatar dropdown-toggle", alt: "avatar", id: "avatar navbarDropdown", data: { toggle: "dropdown"} ) %>
