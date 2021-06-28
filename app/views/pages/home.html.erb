@@ -1,18 +1,19 @@
+<!-- <style>
+  body {background-color: #fce7d1;}
+</style> -->
 <% if user_signed_in? %>
-<div class="">
-  <div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);">
-    <div class="container justify-content-center">
-      <div class="text-center">
-            <h1>Welcome to
-              <div class="d-inline-flex">
-                <h1 style="font-family: 'Reggae One', cursive; color: #D01117;">C</h1>
-                <h1 style="font-family: 'Reggae One', cursive; color: #F3F0F9;">A</h1>
-                <h1 style="font-family: 'Reggae One', cursive; color: #E3B505;">S</h1>
-                <h1 style="font-family: 'Reggae One', cursive; color: #1EDD88;">A</h1>
-              </div>
-       Language School</h1>
-        <p>Change your life and learn a new language at one of the best language schools in Germany!</p>
-      </div>
+<div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);">
+  <div class="container justify-content-center">
+    <div class="text-center">
+          <h1>Welcome to
+            <div class="d-inline-flex">
+              <h1 style="font-family: 'Reggae One', cursive; color: #D01117;">C</h1>
+              <h1 style="font-family: 'Reggae One', cursive; color: #F3F0F9;">A</h1>
+              <h1 style="font-family: 'Reggae One', cursive; color: #E3B505;">S</h1>
+              <h1 style="font-family: 'Reggae One', cursive; color: #1EDD88;">A</h1>
+            </div>
+     Language School</h1>
+      <p>Change your life and learn a new language at one of the best language schools in Germany!</p>
     </div>
   </div>
 </div>
@@ -22,7 +23,7 @@
 
 <div class="container-cards mt-5 mb-5">
   <h2 class="mb-5 text-center">Select one of the options</h2>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="row row-cols-1 row-cols-md-4 g-3">
     <div class="col mb-3">
       <%= link_to users_profile_path, class: "clickable-card" do %>
       <div class="card h-100 card-home education">
@@ -30,20 +31,6 @@
         <div class="card-body">
           <h5 class="card-title">Profile</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-<!--         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div> -->
-      </div>
-      <% end %>
-    </div>
-    <div class="col mb-3">
-      <%= link_to users_profile_path, class: "clickable-card" do %>
-      <div class="card h-100 card-home">
-        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" class="card-img-top" alt="..." style="width: 100% !important; height: 200px !important;">
-        <div class="card-body">
-          <h5 class="card-title">Resources</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         </div>
 <!--         <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
@@ -65,8 +52,49 @@
       </div>
       <% end %>
     </div>
+    <div class="col mb-3">
+      <%= link_to users_profile_path, class: "clickable-card" do %>
+      <div class="card h-100 card-home">
+        <img src="https://images.unsplash.com/photo-1588605360336-77ac8ee6fc53?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" class="card-img-top" alt="..." style="width: 100% !important; height: 200px !important;">
+        <div class="card-body">
+          <h5 class="card-title">Challenges</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+<!--         <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div> -->
+      </div>
+      <% end %>
+    </div>
+    <div class="col mb-3">
+      <%= link_to users_profile_path, class: "clickable-card" do %>
+      <div class="card h-100 card-home">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" class="card-img-top" alt="..." style="width: 100% !important; height: 200px !important;">
+        <div class="card-body">
+          <h5 class="card-title">Resources</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+<!--         <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div> -->
+      </div>
+      <% end %>
+    </div>
   </div>
 </div>
+<br>
+<br>
+<br>
+<div class="container-fluid mb-5">
+  <div class="home-belt mb-5 mt-5 d-flex aligh-items-center justify-content-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/reserve/uZYSV4nuQeyq64azfVIn_15130980706_64134efc6e_o.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1047&q=80);">
+    <div class="container">
+    <div class="text-center home-belt-text">
+      <h2>"He who knows no foreign languages knows nothing of his own."</h2>
+      <p>Name of the Writer</p>
+    </div>
+  </div>
+</div>
+<br>
 <br>
 <br>
 <% else %>
