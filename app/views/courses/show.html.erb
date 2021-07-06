@@ -1,7 +1,21 @@
 <div class="container">
  <h1 class="text-center mt-5">Selected course</h1>
   <div class="card-course mt-5 mb-3">
-    <div class="card-course-img" style="background: url('<%= asset_url 'default_profile.jpg' %>'); background-size: cover;"></div>
+    <% if (@course.title == "A1" || @course.title == "A1.1" || @course.title == "A1.2") %>
+      <div class="card-course-img" style="background: url('<%= asset_url 'A1.png' %>'); background-size: cover;"></div>
+    <% elsif (@course.title == "A2" || @course.title == "A2.1" || @course.title == "A2.2") %>
+      <div class="card-course-img" style="background: url('<%= asset_url 'A2.png' %>'); background-size: cover;"></div>
+    <% elsif (@course.title == "B1" || @course.title == "B1.1" || @course.title == "B1.2") %>
+      <div class="card-course-img" style="background: url('<%= asset_url 'B1.png' %>'); background-size: cover;"></div>
+    <% elsif (@course.title == "B2" || @course.title == "B2.1" || @course.title == "B2.2") %>
+      <div class="card-course-img" style="background: url('<%= asset_url 'B2.png' %>'); background-size: cover;"></div>
+    <% elsif (@course.title == "C1" || @course.title == "C1.1" || @course.title == "C1.2") %>
+      <div class="card-course-img" style="background: url('<%= asset_url 'C1.png' %>'); background-size: cover;"></div>
+    <% elsif (@course.title == "C2" || @course.title == "C2.1" || @course.title == "C2.2") %>
+      <div class="card-course-img" style="background: url('<%= asset_url 'C2.png' %>'); background-size: cover;"></div>
+    <% else %>
+      <div class="card-course-img" style="background: url('<%= asset_url 'default_profile.jpg' %>'); background-size: cover;"></div>
+    <% end %>
     <div class="col">
       <p class="text-right font-weight-bold font-italic align-items-start text-warning ml-3">Special<%= @course.shift %></p>
       <div class="card-course-text">

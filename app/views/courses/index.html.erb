@@ -8,12 +8,20 @@
 <br>
     <% @courses.each do |course| %>
       <div class="card-course mb-5">
-        <% if course.title == "A1" || "A1.1" %>
+        <% if (course.title == "A1" || course.title == "A1.1" || course.title == "A1.2") %>
+          <div class="card-course-img" style="background: url('<%= asset_url 'A1.png' %>'); background-size: cover;"></div>
+        <% elsif (course.title == "A2" || course.title == "A2.1" || course.title == "A2.2") %>
+          <div class="card-course-img" style="background: url('<%= asset_url 'A2.png' %>'); background-size: cover;"></div>
+        <% elsif (course.title == "B1" || course.title == "B1.1" || course.title == "B1.2") %>
+          <div class="card-course-img" style="background: url('<%= asset_url 'B1.png' %>'); background-size: cover;"></div>
+        <% elsif (course.title == "B2" || course.title == "B2.1" || course.title == "B2.2") %>
+          <div class="card-course-img" style="background: url('<%= asset_url 'B2.png' %>'); background-size: cover;"></div>
+        <% elsif (course.title == "C1" || course.title == "C1.1" || course.title == "C1.2") %>
+          <div class="card-course-img" style="background: url('<%= asset_url 'C1.png' %>'); background-size: cover;"></div>
+        <% elsif (course.title == "C2" || course.title == "C2.1" || course.title == "C2.2") %>
+          <div class="card-course-img" style="background: url('<%= asset_url 'C2.png' %>'); background-size: cover;"></div>
+        <% else %>
           <div class="card-course-img" style="background: url('<%= asset_url '15024_1082.jpg' %>'); background-size: cover;"></div>
-        <% elsif course.title == "A2" || "A2.1" %>
-          <div class="card-course-img" style="background: url('<%= asset_url '15024_543.jpg' %>'); background-size: cover;"></div>
-        <% elsif course.title == "B1" || "B1.1" %>
-          <div class="card-course-img" style="background: url('<%= asset_url '15109_1039.jpg' %>'); background-size: cover;"></div>
         <% end %>
         <div class="col">
           <p class="text-right font-weight-bold font-italic align-items-start text-warning ml-3"><%= course.shift %></p>
