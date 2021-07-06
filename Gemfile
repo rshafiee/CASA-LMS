@@ -66,6 +66,10 @@ group :production do
     gem 'rails_12factor'
 end
 
+group :production do
+  gem 'mini_racer'
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
