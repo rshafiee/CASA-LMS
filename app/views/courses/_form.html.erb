@@ -16,10 +16,12 @@
       </div>
       <div class="row">
         <div class="col mr-n2">
-          <%= f.input :start_time, as: :time, :minute_step => 15 %>
+          <%# end_time = start_time.strftime("%H:%M") %>
+          <%= f.input :start_time, as: :time, minute_step: 15 %>
         </div>
         <div class="col mr-n2">
-          <%= f.input :end_time, as: :time, :minute_step => 15 %>
+          <%# end_time = end_time.strftime("%H:%M") %>
+          <%= f.input :end_time, as: :time, minute_step: 15 %>
         </div>
       </div>
       <%= f.input :shift, label: "Time of Day", collection: [['Morning'], ['Afternoon'], ['Evening'], ['Special']] %>
@@ -30,5 +32,4 @@
       <%= f.button :submit, class: "btn-create" %>
     </div>
   <% end %>
-
 </div>
