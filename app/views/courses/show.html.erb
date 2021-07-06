@@ -1,0 +1,59 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p class="mt-5">
+    <strong>Title:</strong>
+    <%= @course.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @course.description %>
+  </p>
+
+  <p>
+    <strong>Start date:</strong>
+    <%= @course.start_date %>
+  </p>
+
+  <p>
+    <strong>End date:</strong>
+    <%= @course.end_date %>
+  </p>
+
+  <p>
+    <strong>Start time:</strong>
+    <%= @course.start_time %>
+  </p>
+
+  <p>
+    <strong>End time:</strong>
+    <%= @course.end_time %>
+  </p>
+
+  <p>
+    <strong>Shift:</strong>
+    <%= @course.shift %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= @course.price %>
+  </p>
+<br>
+  <%= link_to 'Edit', edit_course_path(@course), class: "btn-info" %> |
+  <%= link_to 'Back', courses_path, class: "btn-info" %>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<%= render "shared/footer" %>
+

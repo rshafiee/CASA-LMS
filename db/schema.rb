@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_22_093738) do
+ActiveRecord::Schema.define(version: 2021_07_06_110133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,19 +43,8 @@ ActiveRecord::Schema.define(version: 2021_06_22_093738) do
     t.date "end_date"
     t.time "start_time"
     t.time "end_time"
-    t.string "time_of_day"
-    t.bigint "users_id", null: false
-    t.bigint "pricelists_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["pricelists_id"], name: "index_courses_on_pricelists_id"
-    t.index ["users_id"], name: "index_courses_on_users_id"
-  end
-
-  create_table "pricelists", force: :cascade do |t|
-    t.integer "hourly_course_price"
-    t.integer "weekly_course_price"
-    t.integer "level_course_price"
+    t.string "shift"
+    t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -81,6 +70,4 @@ ActiveRecord::Schema.define(version: 2021_06_22_093738) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "courses", "pricelists", column: "pricelists_id"
-  add_foreign_key "courses", "users", column: "users_id"
 end

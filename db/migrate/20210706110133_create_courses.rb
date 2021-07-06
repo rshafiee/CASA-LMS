@@ -7,9 +7,8 @@ class CreateCourses < ActiveRecord::Migration[6.0]
       t.date :end_date
       t.time :start_time
       t.time :end_time
-      t.string :time_of_day
-      t.references :users, null: false, foreign_key: true
-      t.references :pricelists, null: false, foreign_key: true
+      t.string :shift
+      t.integer :price
 
       t.timestamps
     end
