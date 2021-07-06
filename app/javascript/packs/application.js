@@ -23,11 +23,22 @@ require("channels")
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
+
 // External imports
 import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+
+import { initFlatpickr } from "../plugins/flatpickr";
+
+document.addEventListener('turbolinks:load', () => {
+  initFlatpickr();
+})
+
+initFlatpickr();
+
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -71,3 +82,5 @@ addEventListener("direct-upload:end", event => {
  const element = document.getElementById(`direct-upload-${id}`)
  element.classList.add("direct-upload--complete")
 })
+
+
