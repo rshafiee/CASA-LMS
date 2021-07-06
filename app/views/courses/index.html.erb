@@ -8,7 +8,13 @@
 <br>
     <% @courses.each do |course| %>
       <div class="card-course mb-5">
-        <div class="card-course-img" style="background: url('<%= asset_url 'default_profile.jpg' %>'); background-size: cover;"></div>
+        <% if course.title == "A1" || "A1.1" %>
+          <div class="card-course-img" style="background: url('<%= asset_url '15024_1082.jpg' %>'); background-size: cover;"></div>
+        <% elsif course.title == "A2" || "A2.1" %>
+          <div class="card-course-img" style="background: url('<%= asset_url '15024_543.jpg' %>'); background-size: cover;"></div>
+        <% elsif course.title == "B1" || "B1.1" %>
+          <div class="card-course-img" style="background: url('<%= asset_url '15109_1039.jpg' %>'); background-size: cover;"></div>
+        <% end %>
         <div class="col">
           <p class="text-right font-weight-bold font-italic align-items-start text-warning ml-3"><%= course.shift %></p>
           <div class="card-course-text">
