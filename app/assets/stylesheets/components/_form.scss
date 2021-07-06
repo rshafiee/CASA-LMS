@@ -1,8 +1,9 @@
 .form-control {
   border: none !important;
-  border-radius: 4px !important;
-  border: 1px solid #ddd !important;
+  border-radius: 6px !important;
+  border: 1px solid white !important;
   height: 50px !important;
+  background-color: #e9ecef;
 }
 .form-control:hover {
   border: 1px solid rgba(30, 221, 136, 1) !important;
@@ -31,13 +32,12 @@
   border-radius: 8px;
 }
 
-.datepicker {
-  border-radius: 8px !important;
-  padding: 14px;
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  background-color: #f6f2f9b3 !important;
-  border: 1px solid #2F4F60;
-  justify-content: left;
-}
+// .datepicker {
+//   border-radius: 6px !important;
+//   padding: 14px;
+//   width: 100%;
+//   height: 50px;
+//   margin: 0;
+// }
+
+

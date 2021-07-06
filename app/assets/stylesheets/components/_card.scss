@@ -39,3 +39,45 @@
   border-top-right-radius: 8px;
 }
 
+
+.card-course {
+  overflow: hidden;
+  height: 380px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.card-course:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card-course-img {
+  height: 100%;
+  width: 350px;
+  // object-fit: cover;
+}
+
+.card-course h2 {
+  font-weight: bold;
+}
+
+.card-course p {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 16px;
+}
+.card-course-text {
+  padding: 12px;
+}
+
+// .price-form {
+//   display: flex;
+//   justify-content: space-between;
+// }

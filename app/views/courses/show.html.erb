@@ -1,47 +1,32 @@
 <div class="container">
-
-  <p class="mt-5">
-    <strong>Title:</strong>
-    <%= @course.title %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= @course.description %>
-  </p>
-
-  <p>
-    <strong>Start date:</strong>
-    <%= @course.start_date %>
-  </p>
-
-  <p>
-    <strong>End date:</strong>
-    <%= @course.end_date %>
-  </p>
-
-  <p>
-    <strong>Start time:</strong>
-    <%= @course.start_time %>
-  </p>
-
-  <p>
-    <strong>End time:</strong>
-    <%= @course.end_time %>
-  </p>
-
-  <p>
-    <strong>Shift:</strong>
-    <%= @course.shift %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= @course.price %>
-  </p>
-<br>
-  <%= link_to 'Edit', edit_course_path(@course), class: "btn-info" %> |
-  <%= link_to 'Back', courses_path, class: "btn-info" %>
+ <h1 class="text-center mt-5">Selected course</h1>
+  <div class="card-course mt-5 mb-3">
+    <div class="card-course-img" style="background: url('<%= asset_url 'default_profile.jpg' %>'); background-size: cover;"></div>
+    <div class="col">
+      <p class="text-right font-weight-bold font-italic align-items-start text-warning ml-3">Special<%= @course.shift %></p>
+      <div class="card-course-text">
+        <h2 class="mt-n2">
+          <%= @course.title %>
+        </h2>
+        <p>
+          <%= @course.description %>
+        </p>
+        <p><strong>Start date:</strong> <%= @course.start_date %> - <strong>End date: </strong><%= @course.end_date %></p>
+        <p><strong>Start time:</strong> <%= @course.start_time %> - <strong>End time: </strong><%= @course.end_time %></p>
+        <div class="price-form">
+          <p>
+            <strong>Price:</strong>
+            <strong>€ </strong><%= @course.price %>
+          </p>
+        </div>
+        <div class="row d-flex justify-content-end">
+          <%= link_to 'Back', courses_path, class: "btn-info mr-1" %>
+          <%= link_to 'Edit', edit_course_path(@course), class: "btn-info mr-1" %>
+          <%= link_to 'Destroy', @course, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-info" %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <br>
