@@ -1,6 +1,6 @@
 <div class="container">
  <h1 class="text-center mt-5">Selected course</h1>
-  <div class="card-course mt-5 mb-3">
+  <div class="card-course-show mt-5 mb-3">
     <% if (@course.title == "A1" || @course.title == "A1.1" || @course.title == "A1.2") %>
       <div class="card-course-img" style="background: url('<%= asset_url 'A1.png' %>'); background-size: cover;"></div>
     <% elsif (@course.title == "A2" || @course.title == "A2.1" || @course.title == "A2.2") %>
