@@ -11,11 +11,42 @@
 
  puts "Testing"
 
-# user_one = User.create(email: "rahman@test.com", password: "123456", first_name: "Rahman", last_name: "Shafiee", city: "Berlin")
+# user_one = User.create(email: "rahman@rahman.com", password: "123456", first_name: "Rahman", last_name: "Shafiee", city: "Berlin")
 # user_one.save
- puts "user_one created!"
- # course_one = Course.create(title: "A1", description: "German Course for absolute beginners", start_date: 2021-8-01, end_date: 2021-8-27, shift: "Morning")
- # course_one.save!
- course_one = Course.create(title: "B2", description: "German Course for absolute beginners", start_date: DateTime.new(2021,8,01), end_date: DateTime.new(2021,8,10), start_time: Time.new.strftime("%H:%M"), end_time: Time.now.strftime("%H:%M"), shift: "Morning")
- course_one.save!
- puts "course created!"
+puts "user_one created!"
+
+# teacher_one = Teacher.create(first_name: "Jane", last_name: "Doe")
+# teacher_one.save
+# teacher_two = Teacher.create(first_name: "John", last_name: "Doe")
+# teacher_two.save
+ teacher_three = Teacher.create(first_name: "Bob", last_name: "Doe")
+ teacher_three.save
+ teacher_four = Teacher.create(first_name: "Liz", last_name: "Doe")
+ teacher_four.save
+puts "teachers created"
+
+# student_one = Student.create(first_name: "Jane", last_name: "Doe")
+# student_one.save
+# student_two = Student.create(first_name: "John", last_name: "Doe")
+# student_two.save
+ student_three = Student.create(first_name: "Bob", last_name: "Doe")
+ student_three.save
+ student_four = Student.create(first_name: "Liz", last_name: "Doe")
+ student_four.save
+puts "students created"
+
+# Course.destroy_all
+
+# course_A1 = Course.create(title: "A1", description: "German Course for absolute beginners", start_date: DateTime.parse("2021/8/01"), end_date: DateTime.parse("2021/8/27"), start_time: DateTime.parse("09:00"), end_time: DateTime.parse("12:30"), price: 420, shift: "Morning", user_id: 1, teacher_id: 1, student_id: 1)
+# course_A1.save!
+# course_A2 = Course.create(title: "A2", description: "German Course for elementary level learners", start_date: DateTime.parse("2021/8/01"), end_date: DateTime.parse("2021/8/27"), start_time: DateTime.parse("09:00"), end_time: DateTime.parse("12:30"), price: 420, shift: "Morning", user_id: 1, teacher_id: 1, student_id: 1)
+# course_A2.save!
+# course_B1 = Course.create(title: "B1", description: "German Course for intermediate level learners", start_date: DateTime.parse("2021/8/01"), end_date: DateTime.parse("2021/8/27"), start_time: DateTime.parse("09:00"), end_time: DateTime.parse("12:30"), price: 420, shift: "Morning", user_id: 1, teacher_id: 1, student_id: 1)
+# course_B1.save!
+# course_B2 = Course.create(title: "B2", description: "German Course for upper-intermediate level learners", start_date: DateTime.parse("2021/8/01"), end_date: DateTime.parse("2021/8/27"), start_time: DateTime.parse("09:00"), end_time: DateTime.parse("12:30"), price: 420, shift: "Morning", user_id: 1, teacher_id: 1, student_id: 1)
+# course_B2.save!
+# course_C1 = Course.create(title: "C1", description: "German Course for advanced level learners", start_date: DateTime.parse("2021/8/01"), end_date: DateTime.parse("2021/8/27"), start_time: DateTime.parse("09:00"), end_time: DateTime.parse("12:30"), price: 420, shift: "Morning", user_id: 1, teacher_id: 1, student_id: 1)
+# course_C1.save!
+# course_C2 = Course.create(title: "C2", description: "German Course for advanced level learners", start_date: DateTime.parse("2021/8/01"), end_date: DateTime.parse("2021/8/27"), start_time: DateTime.parse("09:00"), end_time: DateTime.parse("12:30"), price: 420, shift: "Morning", user_id: 1, teacher_id: 1, student_id: 1)
+# course_C2.save!
+puts "courses created!"

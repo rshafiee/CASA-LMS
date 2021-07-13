@@ -24,8 +24,23 @@
           <%= f.input :end_time, as: :time, minute_step: 15 %>
         </div>
       </div>
-      <%= f.input :shift, label: "Time of Day", collection: [['Morning'], ['Afternoon'], ['Evening'], ['Special']] %>
-      <%= f.input :price %>
+      <div class="row">
+        <div class="col mr-n2">
+          <%= f.input :shift, label: "Time of Day", collection: [['Morning'], ['Afternoon'], ['Evening'], ['Special']] %>
+        </div>
+        <div class="col mr-n2">
+          <%= f.input :price %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mr-n2">
+          <%= f.association :teacher, required: false, label: "Select Teachers" %>
+        </div>
+        <div class="col mr-n2">
+          <%= f.association :user, required: false, label: "Administrator" %>
+        </div>
+      </div>
+      <%= f.association :student, required: false, label: "Students" %>
     </div>
 
     <div class="form-actions">

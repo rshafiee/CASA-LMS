@@ -17,7 +17,7 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.new(course_params)
-
+    @course.user = current_user
     respond_to do |format|
       if @course.save
         format.html { redirect_to @course, notice: "Course was successfully created." }
@@ -56,6 +56,6 @@ class CoursesController < ApplicationController
   end
 
   def course_params
-    params.require(:course).permit(:title, :description, :start_date, :end_date, :start_time, :end_time, :shift, :price)
+    params.require(:course).permit(:title, :description, :start_date, :end_date, :start_time, :end_time, :shift, :price, :user_id, :teacher_id, :student_id)
   end
 end
