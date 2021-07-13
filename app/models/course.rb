@@ -1,4 +1,5 @@
 class Course < ApplicationRecord
-  has_many :bookings
-  has_many :users, through: :bookings
+  belongs_to :student
+  belongs_to :teacher
+  belongs_to :user
 end

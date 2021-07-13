@@ -40,6 +40,12 @@
                 <strong>€ </strong><%= course.price %>
               </p>
             </div>
+            <div class="teacher">
+              <p>
+                <strong>Teachers:</strong>
+                <%= course.teacher.first_name %> <%= course.teacher.last_name %>
+              </p>
+            </div>
             <div class="row d-flex justify-content-end">
               <%= link_to 'Show', course, class: "btn-info mr-1" %>
               <%= link_to 'Edit', edit_course_path(course), class: "btn-info mr-1" %>
