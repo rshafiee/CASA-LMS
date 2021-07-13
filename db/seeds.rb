@@ -13,26 +13,34 @@
 
 # user_one = User.create(email: "rahman@rahman.com", password: "123456", first_name: "Rahman", last_name: "Shafiee", city: "Berlin")
 # user_one.save
+# user_two = User.create(email: "test@test.com", password: "123456", first_name: "Bob", last_name: "Doe", username: "Bobi", city: "Berlin")
+# user_two.save
+# user_three = User.create(email: "casa@casa.com", password: "123456", first_name: "Hank", last_name: "Mudy", username: "Hanko", city: "Berlin")
+# user_three.save
+# user_four = User.create(email: "schule@schule.com", password: "123456", first_name: "Werner", last_name: "Riebe", username: "Werner", city: "Berlin")
+# user_four.save
+# user_five = User.create(email: "school@school.com", password: "123456", first_name: "JZ", last_name: "Ayaz", username: "JZ", city: "Berlin")
+# user_five.save
 puts "user_one created!"
 
 # teacher_one = Teacher.create(first_name: "Jane", last_name: "Doe")
 # teacher_one.save
 # teacher_two = Teacher.create(first_name: "John", last_name: "Doe")
 # teacher_two.save
- teacher_three = Teacher.create(first_name: "Bob", last_name: "Doe")
- teacher_three.save
- teacher_four = Teacher.create(first_name: "Liz", last_name: "Doe")
- teacher_four.save
+# teacher_three = Teacher.create(first_name: "Bob", last_name: "Doe")
+# teacher_three.save
+# teacher_four = Teacher.create(first_name: "Liz", last_name: "Doe")
+# teacher_four.save
 puts "teachers created"
 
 # student_one = Student.create(first_name: "Jane", last_name: "Doe")
 # student_one.save
 # student_two = Student.create(first_name: "John", last_name: "Doe")
 # student_two.save
- student_three = Student.create(first_name: "Bob", last_name: "Doe")
- student_three.save
- student_four = Student.create(first_name: "Liz", last_name: "Doe")
- student_four.save
+# student_three = Student.create(first_name: "Bob", last_name: "Doe")
+# student_three.save
+# student_four = Student.create(first_name: "Liz", last_name: "Doe")
+# student_four.save
 puts "students created"
 
 # Course.destroy_all
