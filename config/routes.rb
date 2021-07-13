@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages
+  resources :rooms
   resources :courses
   devise_for :users, controllers: { confirmations: 'confirmations' }
   root to: 'pages#home'
