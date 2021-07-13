@@ -3,6 +3,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "https://lms-casa.herokuapp.com" }
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.cache_store = :redis_cache_store, { url: ENV.fetch("REDIS_URL", "redis://localhost:6379/0") }
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
