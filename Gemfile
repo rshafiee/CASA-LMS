@@ -42,6 +42,7 @@ gem 'flatpickr'
 
 gem 'date_picker'
 
+gem 'gemoji'
 
 gem 'cloudinary', '~> 1.16.0'
 
