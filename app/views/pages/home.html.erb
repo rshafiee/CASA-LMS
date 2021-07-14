@@ -2,9 +2,9 @@
   body {background-color: #fce7d1;}
 </style> -->
 <% if user_signed_in? %>
-<div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= asset_url 'IMG_0580.png' %>');">
-<!-- <div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);">
- -->  <div class="container justify-content-center">
+<!-- <div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);">-->
+<!-- <div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%#= asset_url 'IMG_0580.png' %>');">
+  <div class="container justify-content-center">
     <div class="text-center">
           <h1>Welcome to
             <div class="d-inline-flex">
@@ -17,8 +17,48 @@
       <p>Change your life and learn a new language at one of the best language schools in Germany!</p>
     </div>
   </div>
-</div>
+</div> -->
 
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url('<%= asset_url 'IMG_0580.png' %>');">
+      <div class="container justify-content-center">
+        <div class="text-center">
+              <h1>Welcome to
+                <div class="d-inline-flex">
+                  <h1 style="font-family: 'Reggae One', cursive; color: #D01117;">C</h1>
+                  <h1 style="font-family: 'Reggae One', cursive; color: #F3F0F9;">A</h1>
+                  <h1 style="font-family: 'Reggae One', cursive; color: #E3B505;">S</h1>
+                  <h1 style="font-family: 'Reggae One', cursive; color: #1EDD88;">A</h1>
+                </div>
+         Language School</h1>
+          <p>Change your life and learn a new language at one of the best language schools in Germany!</p>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="carousel-item">
+     <div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url('<%= asset_url 'IMG_0586.png' %>');"></div>
+    </div>
+    <div class="carousel-item">
+     <div class="banner-sign-in" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url('<%= asset_url '15024_1082.jpg' %>');"></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 <br>
 <br>
 
