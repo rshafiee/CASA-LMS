@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   validates_uniqueness_of :username
-  has_many :courses
+  has_many :courses, dependent: :destroy
+  has_many :messages, dependent: :destroy
+  has_many :rooms, through: :messages, dependent: :destroy
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

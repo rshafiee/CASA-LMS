@@ -1,5 +1,5 @@
 class Student < ApplicationRecord
-  has_many :courses
+  has_many :courses, dependent: :destroy
   has_many :teachers, through: :courses
 
 
