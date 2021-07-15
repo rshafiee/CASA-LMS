@@ -54,6 +54,7 @@
         <hr>
         <div class="course-info">
             <h2 class="mt-5">Level <%= @course.title %></h2>
+            <br>
             <% if @course.title == "A1" %>
               <h5>Getting started:</h5>
               <p class=""><%= @course.description %></p>
@@ -78,6 +79,30 @@
             <% end %>
         </div>
         <br>
+        <br>
+        <hr>
+
+        <div class="facilities">
+          <h2>What our school offers</h2>
+          <br>
+          <div class="d-flex">
+            <div class="mr-5 ml-5">
+              <p><i class="fas fa-concierge-bell"></i> Reception </p>
+              <p><i class="fas fa-wifi"></i> Free wifi </p>
+              <p><i class="fas fa-coffee"></i> Cafeteria </p>
+              <p><i class="fas fa-school"></i> Well-equiped classrooms</p>
+
+            </div>
+            <div class="ml-5">
+              <p><i class="fas fa-chalkboard-teacher"></i> High-tech school</p>
+              <p><i class="fas fa-restroom"></i> Restrooms</p>
+              <p><i class="fas fa-tv"></i> T.V</p>
+              <p><i class="fas fa-user-graduate"></i> Happy graduates</p>
+            </div>
+          </div>
+
+
+        </div>
         <br>
         <hr>
       </div>
