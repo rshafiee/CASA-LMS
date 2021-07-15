@@ -28,10 +28,22 @@
           <div class="card-course-text">
             <h2 class="mt-n2">
               <%= course.title %>
+              <% if course.title == "A1" %>
+                <h5>Getting started</h5>
+              <% elsif course.title == "A2" %>
+                <h5>Communicating basic information</h5>
+              <% elsif course.title == "B1" %>
+                <h5>Manage everyday situations</h5>
+              <% elsif course.title == "B2" %>
+                <h5>Be convincing</h5>
+              <% elsif course.title == "C1" %>
+                <h5>Communicate freely and express demands</h5>
+              <% elsif course.title == "C2" %>
+                <h5>Communicate freely and express demands</h5>
+              <% else %>
+                <h5>Specialized courses</h5>
+              <% end %>
             </h2>
-            <p>
-              <%= course.description %>
-            </p>
             <p><strong>Start date:</strong> <%= course.start_date %> - <strong>End date: </strong><%= course.end_date %></p>
             <p><strong>Start time:</strong> <%= course.start_time %> - <strong>End time: </strong><%= course.end_time %></p>
             <div class="price-form">

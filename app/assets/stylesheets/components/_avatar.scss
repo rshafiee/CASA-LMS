@@ -30,3 +30,21 @@
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
 }
+
+.avatar-course {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  // border: 1px solid black;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.avatar-course:hover {
+  // webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+  // filter: blur(1px);
+  width: 55px;
+  height: 55px;
+  transition: all 0.5s ease-out;
+}
